@@ -1,0 +1,40 @@
+.SignIn {
+  color: #008a8a;
+  text-align: center;
+}
+.label {
+  margin: 10px 0px;
+}
+.InputTag {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 5px;
+  border: 1px solid rgb(110, 110, 110);
+  border-radius: 5px;
+}
+.InputTag:focus {
+  border: none;
+}
+.CheckBox {
+  margin: 10px 10px 10px 0px;
+}
+a {
+  margin: 10px 10px 10px 0px;
+  color: #008a8a;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.Form {
+  width: 40%;
+  margin: auto;
+}
+button {
+  width: 100%;
+  margin: 20px auto;
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+  background-color: #008a8a;
+  border: none;
+  border-radius: 20px;
+}
