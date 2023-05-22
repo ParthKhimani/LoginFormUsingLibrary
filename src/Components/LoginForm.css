@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-.label {
+.input-label {
   margin: 10px 0px;
 }
 
@@ -46,13 +46,14 @@ button {
   border-radius: 20px;
 }
 
-.star {
+.star-label {
   color: red;
 }
 
 .flex-container {
   display: flex;
   justify-content: space-between;
+  width: 107%;
 }
 
 .line {

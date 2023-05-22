@@ -1,12 +1,16 @@
 import { CustomCheckbox, CustomInput } from "form-fields-parth-khimani";
+import apple from "../images/apple-logo.png";
+import google from "../images/google-logo.png";
+import pngwing from "../images/pngwing-logo.png";
+import xero from "../images/xero-logo.png";
 import "./LoginForm.css";
 
 const LoginForm = () => {
   return (
     <div className="form">
       <h1 className="sign-in">Sign In</h1>
-      <label className="label">Email</label>
-      <label className="star">*</label>
+      <label className="input-label">Email </label>
+      <label className="star-label">*</label>
       <CustomInput
         className="input-tag"
         type="email"
@@ -14,17 +18,17 @@ const LoginForm = () => {
         validationErrorMessage="*Invalid Email !"
         placeholder="abc@gmail.com"
       />
-      <label className="label">Password</label>
-      <label className="star">*</label>
+      <label className="input-label">Password </label>
+      <label className="star-label">*</label>
       <CustomInput
         className="input-tag"
         type="password"
         name="password"
         validationErrorMessage="*Please use a strong password !"
-        validationPattern={/^(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{6,15})$/}
+        validationPattern={/^[A-Za-z]\w{7,14}$/}
         placeholder="Password"
       />
-      
+
       <div className="flex-container">
         <CustomCheckbox
           label="Keep me logged in"
@@ -33,7 +37,6 @@ const LoginForm = () => {
         />
         <a>Forgot Password ?</a>
       </div>
-      
 
       <button>SIGN IN</button>
 
@@ -44,14 +47,20 @@ const LoginForm = () => {
       </div>
 
       <div className="logos">
-        <img src={"../public/google-log.png"} alt="google" /> 
-        <img src={"../public/apple-log.png"} alt="apple" />
-        <img src={"../public/pngwing-log.png"} alt="qb" />
-        <img src={"../public/xero-log.png"} alt="xero" />
+        <img
+          src={google}
+          alt="google"
+          style={{ height: "10%", width: "10%" }}
+        />
+        <img src={apple} alt="apple" style={{ height: "10%", width: "10%" }} />
+        <img src={pngwing} alt="qb" style={{ height: "10%", width: "10%" }} />
+        <img src={xero} alt="xero" style={{ height: "10%", width: "10%" }} />
       </div>
 
       <div className="link">
-        <p>Already have an account ? <a>Sign Up</a></p>
+        <p>
+          Already have an account ? <a>Sign Up</a>
+        </p>
       </div>
     </div>
   );
