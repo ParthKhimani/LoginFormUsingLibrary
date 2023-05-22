@@ -3,12 +3,12 @@ import "./LoginForm.css";
 
 const LoginForm = () => {
   return (
-    <div className="Form">
-      <h1 className="SignIn">Sign In</h1>
+    <div className="form">
+      <h1 className="sign-in">Sign In</h1>
       <label className="label">Email</label>
       <label className="star"> *</label>
       <CustomInput
-        className="InputTag"
+        className="input-tag"
         type="email"
         name="email"
         validationErrorMessage="*Invalid Email !"
@@ -17,7 +17,7 @@ const LoginForm = () => {
       <label className="label">Password</label>
       <label className="star"> *</label>
       <CustomInput
-        className="InputTag"
+        className="input-tag"
         type="password"
         name="password"
         validationErrorMessage="*Please use a strong password !"
@@ -29,7 +29,7 @@ const LoginForm = () => {
         <CustomCheckbox
           label="Keep me logged in"
           value="LoggedIn"
-          className="CheckBox"
+          className="check-box"
         />
         <a>Forgot Password ?</a>
       </div>
