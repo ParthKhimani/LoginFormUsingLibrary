@@ -6,7 +6,7 @@ const LoginForm = () => {
     <div className="form">
       <h1 className="sign-in">Sign In</h1>
       <label className="label">Email</label>
-      <label className="star"> *</label>
+      <label className="star">*</label>
       <CustomInput
         className="input-tag"
         type="email"
@@ -15,7 +15,7 @@ const LoginForm = () => {
         placeholder="abc@gmail.com"
       />
       <label className="label">Password</label>
-      <label className="star"> *</label>
+      <label className="star">*</label>
       <CustomInput
         className="input-tag"
         type="password"
